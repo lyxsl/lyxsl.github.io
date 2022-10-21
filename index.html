@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>养乐多的小屋</title>
+		<style>
+		body{
+		    margin: 0;
+		    padding: 0;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    background: linear-gradient(125deg,#F4E8F1,#FFDAD6,#FFDBB1,#CFCBDC,#FFE1EE);
+		    background-size: 3000%;
+		    animation: bgAnimation 15s linear infinite;
+		}
+		@keyframes bgAnimation {
+		    0%{
+		        background-position: 0% 50%;
+		    }
+		    50%{
+		        background-position: 100% 50%;
+		    }
+		    100%{
+		        background-position: 0% 50%;
+		    }
+		}
+        .a{
+            position: relative;
+            width: 700px;
+            height: 400px;
+            border: #fff 10px solid;
+            background-color: rgb(210,170,200);
+            top: 120px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .b{
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            left: 0;
+            margin: 75px 50px;
+            transition: 1s;
+        }
+        .b a{
+            text-decoration: none;
+            color: #fff;
+            font: 900 28px '';
+        }
+        .b h2{
+            transition: .5s 1s;
+            opacity: 0;
+            color: rgb(112,148,194);
+        }
+        .b span{
+            transition: .5s 1s;
+            color: #fff;
+            font: 500 15px '';
+            position: absolute;
+            top: 70px;
+        }
+        .c{
+            position: absolute;
+            top: -130px;
+            right: -240px;
+        }
+        .d,.e{
+            position: absolute;
+            right: calc(var(--i)*100px);
+            width: calc(var(--w)*40px);
+            height: 500px;
+            overflow: hidden;
+            border-radius: 100px;
+            transform: rotateZ(220deg) translate(0,0);
+            background: rgb(255,219,177);
+            transition: .5s .5s;
+        }
+        .d:nth-child(2){
+            background: rgb(204,197,229);
+        }
+        .e{
+            left: -470px;
+            top: -140px;
+            width: 70px;
+            background-color: rgb(179,228,219);
+        }
+        .a:hover .c div{
+            transition: .5s calc(var(--i)*.1s);
+            transform: rotateZ(220deg) translate(-200px,400px);
+        }
+        .a:hover .b{
+            transition: 1s .5s;
+            left: 370px;
+        }
+        .a:hover .b span{
+            transition: 1s .5s;
+            top: 105px;
+        }
+        .a:hover .b h2{
+            transition: 1s .5s;
+            opacity: 1;
+        }
+        .f{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            background-size: cover;
+            margin: 85px;
+            opacity: 0;
+            transition: .3s;
+        }
+        .a:hover .f{
+            transition: 1s 1.3s;
+            opacity: 1;
+        }
+		.h{
+			background: #fff;
+			height: 40px;
+			width: 150px;
+			border-radius: 10px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.h a{
+			text-decoration: none;
+		}
+		.i{
+			margin-top:40px;
+			background: #fff;
+			height: 40px;
+			width: 150px;
+			border-radius: 10px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.i a{
+			text-decoration: none;
+		}
+		.j{
+			margin-top:40px;
+			background: #fff;
+			height: 40px;
+			width: 150px;
+			border-radius: 10px;
+			text-align: center;
+			line-height: 40px;
+		}
+		.j a{
+			text-decoration: none;
+		}
+		.h:hover{
+			background: #FFDB79;
+			color: #000;
+		}
+		.i:hover{
+			background: rgb(179,228,219);
+			color: #000;
+		}
+		.j:hover{
+			background: rgb(204,197,229);
+			color: #000;
+		}
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <a href="#">养乐多的小窝</a>
+            <h2>20104010920</h2>
+            <span>A winner never stops trying.</br>I am a slow walker , but i never walk backwards.<br/>If you can dream it,you can do it.</span>
+        </div>
+        <div class="c">
+            <div class="d" style="--i:1;--w:1.5"></div>
+            <div class="d" style="--i:2;--w:1.6"></div>
+            <div class="d" style="--i:3;--w:1.4"></div>
+            <div class="d" style="--i:4;--w:1.7"></div>
+            <div class="e" style="--i:1"></div>
+        </div>
+        <div class="f">
+			<div class="h"><a href="information.html">个人介绍</a></div>
+			<div class="i"><a href="zpj.html">作品集</a></div>
+			<div class="j"><a href="rz.html">日志</a></div>
+		</div>
+    </div>
+</body>
+</html>

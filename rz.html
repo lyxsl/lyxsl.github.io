@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>养乐多的小屋</title>
+		<style>
+			*{
+			    margin: 0;
+			    padding: 0;
+			    font-family: "Poppins", sans-serif;
+			}
+			
+			body{
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    background: linear-gradient(125deg,#F4E8F1,#FFDAD6,#FFDBB1,#FFE1EE);
+			    background-size: 3000%;
+			    animation: bgAnimation 15s linear infinite;
+			}
+			@keyframes bgAnimation {
+			    0%{
+			        background-position: 0% 50%;
+			    }
+			    50%{
+			        background-position: 100% 50%;
+			    }
+			    100%{
+			        background-position: 0% 50%;
+			    }
+			}
+			.a{
+			    position: relative;
+			    height: 800px;
+			    width: 100%;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    flex-wrap: wrap;
+			    padding: 30px;
+			}
+			
+			.a .b{
+			    margin-top: 100px;
+			    position: relative;
+			    max-width: 300px;
+			    height: 215px;
+			    background: #fff;
+			    margin: 30px 10px;
+			    padding: 20px 15px;
+			    display: flex;
+			    flex-direction: column;
+			    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+			    transition: .3s ease-in-out;
+				border-radius: 10px;
+			}
+			
+			.a .b:hover{
+			    height: 420px;
+			}
+			
+			.a .b .c{
+			    position: relative;
+			    width: 260px;
+			    height: 260px;
+			    top: -60px;
+			    left: 20px;
+			    z-index: 1;
+			    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+			}
+			
+			.a .b .c img{
+			    max-width: 100%;
+			    border-radius: 4px;
+			}
+			
+			.a .b .d{
+			    position: relative;
+			    margin-top: -140px;
+			    padding: 10px 15px;
+			    text-align: center;
+			    color: #111;
+			    visibility: hidden;
+			    opacity: 0;
+			    transition: .3s ease-in-out;
+			}
+			
+			.a .b:hover .d{
+			    visibility: visible;
+			    opacity: 1;
+			    margin-top: -40px;
+			    transition-delay: .3s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b">
+				<div class="c">
+					<img src="img/g.jpg" width="260px" height="260px">
+				</div>
+				<div class="d">
+					<h2>Card One</h2>
+					<p>All that is beautiful poems and passages of life things do not change; We change. Sell your clothes and keep your thoughts.</p>
+				</div>
+			</div>
+			<div class="b">
+				<div class="c">
+					<img src="img/h.jpg" width="260px" height="260px">
+				</div>
+				<div class="d">
+					<h2>Card Tow</h2>
+					<p>Not everyone in your life Will grow old with you .Some are just passing by.To teach you lessons in life .Some will hang around .And some will be missed.This is life You got this.</p>
+				</div>
+			</div>
+			<div class="b">
+				<div class="c">
+					<img src="img/i.jpg" width="260px" height="260px">
+				</div>
+				<div class="d">
+					<h2>Card Three</h2>
+					<p>Let go of all bad things before you fall asleep and never look back when you wake up.Cherish everyone that you encounter and don't let it bother you if someone leaves without saying goodbye.Whatever will be,will be.
+</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

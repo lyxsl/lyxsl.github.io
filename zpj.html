@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>养乐多的小屋</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100ch;
+				background-color: rgb(244, 232, 241);
+			}
+			.a{
+				width: 60%;
+				height: 600px;
+				display: flex;
+			}
+			.b{
+				flex: 1;
+				overflow: hidden;
+				transition: .5s;
+				margin: 0 20px;
+				box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+				border-radius: 20px;
+				border: 10px solid #fff;
+				background-color: #fff;
+			}
+			.b>img{
+				width: 200%;
+				height: 85%;
+				object-fit: cover;
+				transition: .5s;
+			}
+			.b>span{
+				font: 200 30px'优设标题黑';
+				text-align: center;
+				height: 15%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.b:hover{
+				flex-basis: 40%;
+			}
+			.b:hover>img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head> 
+	<body>
+		<div class="a">
+			<div class="b">
+				<img src="img/a.png" >
+				<span>photoshop</span>
+			</div>
+			<div class="b">
+				<img src="img/b.png" >
+				<span>MAYA</span>
+			</div>
+			<div class="b">
+				<img src="img/c.jpg" >
+				<span>C4D</span>
+			</div>
+			<div class="b">
+				<img src="img/d.jpg" >
+				<span>3DMAX</span>
+			</div>
+			<div class="b">
+				<img src="img/e.jpg" >
+				<span>AI<span>
+			</div>
+		</div>
+	</body>
+</html>

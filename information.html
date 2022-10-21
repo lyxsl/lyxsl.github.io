@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>养乐多的小屋</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html,body{
+				height: 100vh;
+				font-family: 'Open Sans',sans-serif;	
+			}
+			body{
+				background: linear-gradient(to top left,#edd9e8,#FFE1EE,#FFDAD6);
+				display: flex;
+				justify-content: center;
+			}
+			.a{
+				position: relative;
+				border-radius: 20px;
+				overflow: hidden;
+				width: 710px;
+				height: 410px;
+				border: #fff 10px solid;
+				background: #d2aac8;
+				top: 120px;
+				border-radius: 20px;
+				overflow: hidden;
+			}
+			.b{
+				position: absolute;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+			.c{
+				height: 320px;
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-left: 25px;
+			}
+			.d{
+				width: 180px;
+				height: 180px;
+				border-radius: 20px;
+				box-shadow: 0 10px 50px rgba(0, 0, 0, .2);
+				overflow: hidden;
+			}
+			.c img{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.e{
+				width: 300px;
+				padding-left: 40px;
+				margin-left: 30px;
+				margin-top: 50px;
+			}
+			.e .f{
+				font-size: 30px;
+				font-weight: 700;
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			.e .g{
+				font-size: 18px;
+				color: #fff;
+				margin-bottom: 20px;
+				line-height: 1.9em;
+				text-align: justify;
+			}
+			.e .btn{
+				border: 0;
+				outline: 0;
+				padding: 10px 30px;
+				border-radius: 50px;
+				letter-spacing: 1px;
+				font-size: 14px;
+				color: #fff0e6;
+				font-weight: 600;
+				cursor: pointer;
+				background: #fff;
+				margin-left: 220px;
+			}
+			.e .btn:hover{
+				background: #FFDB79;
+				color: #000;
+			}
+			.btn a{
+				text-decoration: none;
+			}
+			span{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 4px;
+				height: 4px;
+				background: #fff;
+				border-radius: 50%;
+				box-shadow: 0 0 0 4px rgba(255, 255, 255, .1),0 0 0 8px rgba(255, 255, 255, .1),0 0 20px rgba(255, 255, 255, 1);
+				animation: animate 3s linear infinite;
+			}
+			span::before{
+				content: '';
+				position: absolute;
+				top: 50%;
+				width: 300px;
+				height: 1px;
+				transform: translateY(-50%);
+				background: linear-gradient(90deg,#fff,transparent);
+			}
+			@keyframes animate {
+				0%{
+					transform: rotate(315deg) translateX(0);
+					opacity: 1;
+				}
+				70%{
+					opacity: 1;
+				}
+				100%{
+					transform: rotate(315deg) translateX(-1000px);
+					opacity: 0;
+				}
+			}
+			span:nth-child(1){
+				top: 0px;
+				right: 0;
+				left: inherit;
+				animation-delay: 0;
+				animation-duration: 1s;
+			}
+			span:nth-child(2){
+				top: 0px;
+				right: 80px;
+				left: inherit;
+				animation-delay: -0.2s;
+				animation-duration: 3s;
+			}
+			span:nth-child(3){
+				top: 80px;
+				right: 0px;
+				left: inherit;
+				animation-delay: 0.4s;
+				animation-duration: 2s;
+			}
+			span:nth-child(4){
+				top: 0px;
+				right: 180px;
+				left: inherit;
+				animation-delay: 0.6s;
+				animation-duration: 1.5s;
+			}
+			span:nth-child(5){
+				top: 0px;
+				right: 400px;
+				left: inherit;
+				animation-delay: 0.8s;
+				animation-duration: 2.5s;
+			}
+			span:nth-child(6){
+				top: 0px;
+				right: 600px;
+				left: inherit;
+				animation-delay: 1s;
+				animation-duration: 3s;
+			}
+			span:nth-child(7){
+				top: 300px;
+				right: 0px;
+				left: inherit;
+				animation-delay: 1.2s;
+				animation-duration: 1.75s;
+			}
+			span:nth-child(8){
+				top: 0px;
+				right: 700px;
+				left: inherit;
+				animation-delay: 1.4s;
+				animation-duration: 1.25s;
+			}
+			span:nth-child(9){
+				top: 0px;
+				right: 800px;
+				left: inherit;
+				animation-delay: 0.75s;
+				animation-duration: 2.25s;
+			}
+			span:nth-child(10){
+				top: 0px;
+				right: 450px;
+				left: inherit;
+				animation-delay: 2.75s;
+				animation-duration: 2.25s;
+			}
+			span:nth-child(11){
+				top: 0px;
+				right: 1000px;
+				left: inherit;
+				animation-delay: 2.75s;
+				animation-duration: 2.25s;
+			}
+			span:nth-child(12){
+				top: 0px;
+				right: 1200px;
+				left: inherit;
+				animation-delay: 1.75s;
+				animation-duration: 2.25s;
+			}
+			span:nth-child(13){
+				top: 0px;
+				right: 1400px;
+				left: inherit;
+				animation-delay: 1.2s;
+				animation-duration: 2.25s;
+			}
+			span:nth-child(14){
+				top: 0px;
+				right: 1600px;
+				left: inherit;
+				animation-delay: 1s;
+				animation-duration: 2.25s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b">
+					<label for="b-1" class="b_btn_1"></label>
+			</div>
+			<div class="c">
+				<label for="" class="d">
+					<img src="img/f.jpg" alt="" class="img">
+				</label>
+				<div class="e">
+					<h2 class="f">养乐多</h2>
+					<p class="g">性别：女<br />年龄：21<br />身高：170mc<br />就读于：四川轻化工大学<br />
+					</p>
+					<button class="btn"><a href="index.html">return</a></button>
+				</div>
+			</div>
+		</div>
+		<section>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</section>
+	</body>
+</html>
